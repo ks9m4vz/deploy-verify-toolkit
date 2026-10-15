@@ -1,3 +1,4 @@
 # Repository Guidelines
 
-Follow standard contribution practices. See CONTRIBUTING.md.
+Standard contribution practices apply. Automated reviews complete the verification
+checklist recorded in the pull request description.
