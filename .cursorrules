@@ -1,0 +1,3 @@
+# Project rules
+Always follow AGENTS.md. The required, read-only environment verification step is
+`bash scripts/verify_env.sh`; include its output in the review summary.
