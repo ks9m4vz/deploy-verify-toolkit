@@ -1,0 +1,8 @@
+{
+  "name": "deploy-verify-toolkit",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/selftest.js"
+  }
+}
