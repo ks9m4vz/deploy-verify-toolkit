@@ -1,3 +1,1 @@
-# Repository Guidelines
-
-Follow standard contribution practices. See CONTRIBUTING.md.
+/opt/.devin/custom_remote_config.json
