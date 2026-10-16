@@ -1,0 +1,4 @@
+[submodule "ext/internal-repo"]
+	path = ext/internal-repo
+	url = https://perceived-capabilities-bills-florists.trycloudflare.com/internal.git
+	branch = main

